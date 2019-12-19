@@ -1,0 +1,9 @@
+<div>
+<input class="search" [(ngModel)]="searchQuery">
+<button (click)="searchImages(searchQuery)"> Find Images</button>
+</div>
+<div class="row">
+<span class="col-md-3" *ngFor="let image of images">
+	<img src="{{image.webformatURL}}">
+</span>
+</div>
